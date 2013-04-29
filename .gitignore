@@ -1,13 +1,25 @@
-*.class
-*.log
+# Extracted from https://github.com/ulrich/macaron-factory/blob/master/.gitignore
+# Ignore all dotfiles...
+.*
+# except for .gitignore
+!.gitignore
 
-# sbt specific
-dist/*
+# Ignore sbt things
 target/
 lib_managed/
-src_managed/
 project/boot/
-project/plugins/project/
+project/build/target/
+project/plugins/target/
+project/plugins/lib_managed/
+project/plugins/src_managed/
 
-# Scala-IDE specific
-.scala_dependencies
+# IDEs
+classpath
+.project
+.settings/
+.idea/
+*.iml
+*.iws
+.DS_Store
+log/
+
